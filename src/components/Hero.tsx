@@ -1,6 +1,6 @@
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
-import heroImage from "figma:asset/881586c9e91197deb3decb96ae8d778277eba0a8.png";
+import heroImage from "../assets/hero-renaissance.png";
 
 export function Hero() {
   return (
