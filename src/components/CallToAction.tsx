@@ -39,12 +39,14 @@ export function CallToAction() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            <Button 
-              size="lg"
-              className="bg-[#2CACE8] hover:bg-[#2CACE8]/90 text-white rounded-full px-8 transition-all duration-300 w-full sm:w-auto"
-            >
-              Request access
-            </Button>
+            <a href="/request-access">
+              <Button 
+                size="lg"
+                className="bg-[#2CACE8] hover:bg-[#2CACE8]/90 text-white rounded-full px-8 transition-all duration-300 w-full sm:w-auto"
+              >
+                Request access
+              </Button>
+            </a>
             <Button 
               size="lg"
               variant="outline"

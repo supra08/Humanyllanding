@@ -1,4 +1,5 @@
-import imgU5953441468ASublimeReImaginingOfMichelangelosCreationOf6C46D0B28Cd447C28Ab79D8B2A68Bc9D1 from "figma:asset/b08784c7f5b967e5df94be1268e30e560fb05a45.png";
+// Image import removed - file not found, using placeholder
+const imgU5953441468ASublimeReImaginingOfMichelangelosCreationOf6C46D0B28Cd447C28Ab79D8B2A68Bc9D1 = "";
 
 export default function Frame() {
   return (

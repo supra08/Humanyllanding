@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Navigation } from '../components/Navigation';
+import { Hero } from '../components/Hero';
+import { WhatWeDo } from '../components/WhatWeDo';
+import { Experiments } from '../components/Experiments';
+import { Philosophy } from '../components/Philosophy';
+import { WhyThisMatters } from '../components/WhyThisMatters';
+import { TalkToUs } from '../components/TalkToUs';
+import { CallToAction } from '../components/CallToAction';
+import heroImage from '../assets/hero-renaissance.png';
+---
+
+<BaseLayout>
+  <div class="min-h-screen bg-white">
+    <Navigation client:load />
+    <Hero client:load heroImage={heroImage.src} />
+    <WhatWeDo client:load />
+    <Experiments client:load />
+    <Philosophy client:load />
+    <WhyThisMatters client:load />
+    <TalkToUs client:load />
+    <CallToAction client:load />
+  </div>
+</BaseLayout>
+

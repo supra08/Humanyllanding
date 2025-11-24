@@ -1,0 +1,11 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Navigation } from '../components/Navigation';
+import RequestAccessForm from '../components/RequestAccessForm';
+---
+
+<BaseLayout title="Request Access | Humanyl" description="Request access to Humanyl web agents">
+  <RequestAccessForm client:load />
+</BaseLayout>
+
+

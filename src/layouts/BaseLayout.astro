@@ -1,0 +1,32 @@
+---
+import '../styles/globals.css';
+import favicon from '../assets/favicon.ico';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'Humanyl', description = 'Where Intelligence Meets Intention' } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href={favicon} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+

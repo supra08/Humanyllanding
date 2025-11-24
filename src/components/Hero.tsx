@@ -1,8 +1,11 @@
 import { Button } from "./ui/button";
 import { motion } from "motion/react";
-import heroImage from "../assets/hero-renaissance.png";
 
-export function Hero() {
+interface HeroProps {
+  heroImage?: string;
+}
+
+export function Hero({ heroImage = "/hero-renaissance.png" }: HeroProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -49,6 +52,21 @@ export function Hero() {
           with the deliberate confidence of a skilled teammate who knows when to act and when to pause.
         </motion.p>
         
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.9, delay: 0.45, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <a href="/request-access">
+            <Button 
+              size="lg"
+              className="bg-[#2CACE8] hover:bg-[#2CACE8]/90 text-white rounded-full px-8 py-6 text-base transition-all duration-300"
+              style={{ fontFamily: "'Instrument Sans', sans-serif" }}
+            >
+              Request access
+            </Button>
+          </a>
+        </motion.div>
 
       </div>
     </section>
